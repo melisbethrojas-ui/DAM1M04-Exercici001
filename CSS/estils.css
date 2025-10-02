@@ -1,41 +1,67 @@
-/* estils.css */
-
-/* Selector per etiqueta (aplica a tot el document, però pot ser sobreescrit):
-   Aquest color verd serà sobreescrit pel CSS intern (p {color: blue;}) */
+/* Estilo por etiqueta */
 p {
   color: green;
-  font-size: 16px;
 }
 
-/* Selectors per classe */
-.vermell {
+/* Estilo por ID */
+#titulo {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+/* Estilos por clases */
+.normal {
+  color: black;
+}
+.texto-importante {
+  color: red;
+  font-weight: bold;
+}
+
+.rojo {
   color: red;
 }
-.gran {
+
+.grande {
   font-size: 24px;
 }
-.negreta {
-  font-weight: bold;
-}
-.subratllat {
-  text-decoration: underline;
-}
-.text-important {
-  color: #c00000;
+
+.negrita {
   font-weight: bold;
 }
 
-/* Selector per id (únic per element) */
-#titol {
+.subrayado {
   text-decoration: underline;
-  font-size: 28px;
 }
 
-/* Un toc per als enllaços, per veure que l'external també aplica */
-a {
-  text-decoration: none;
-  border-bottom: 1px dotted #333;
+lu > li:first-child {
+  color: red;
 }
+
+/* Elementos intermedios en verde */
+lu > li:nth-child(2),
+lu > li:nth-child(3) {
+  color: green;
+}
+
+/* Último elemento en azul */
+lu > li:last-child {
+  color: rgb(1, 1, 116);
+}
+
+/* Pseudoclase */
 a:hover {
-  border-bottom-style: solid;
+  color: black; 
+  cursor: pointer;
+}
+
+/* Pseudoelementos */
+p::before {
+  content: "👉 ";
+  color: blue;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
 }
