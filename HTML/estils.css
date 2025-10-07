@@ -34,18 +34,18 @@ p {
   text-decoration: underline;
 }
 
-lu > li:first-child {
+ul > li:first-child {
   color: red;
 }
 
 /* Elementos intermedios en verde */
-lu > li:nth-child(2),
-lu > li:nth-child(3) {
+ul > li:nth-child(2),
+ul > li:nth-child(3) {
   color: green;
 }
 
 /* Último elemento en azul */
-lu > li:last-child {
+ul > li:last-child {
   color: rgb(1, 1, 116);
 }
 
