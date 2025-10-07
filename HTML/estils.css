@@ -34,30 +34,22 @@ p {
   text-decoration: underline;
 }
 
-ul > li:first-child {
+ul > li:first-child,
+ol > li:first-child {
   color: red;
 }
 
 /* Elementos intermedios en verde */
 ul > li:nth-child(2),
-ul > li:nth-child(3) {
-  color: green;
-}
-
-/* Último elemento en azul */
-ul > li:last-child {
-  color: rgb(0, 0, 105);
-}
-
-ol > li:first-child {
-  color: red;
-}
+ul > li:nth-child(3),
 ol > li:nth-child(2) {
   color: green;
 }
 
+/* Último elemento en azul */
+ul > li:last-child, 
 ol > li:last-child {
-  color : rgb(0, 0, 105);
+  color: rgb(0, 0, 105);
 }
 
 
